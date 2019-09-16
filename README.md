@@ -1,68 +1,65 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Aionic Manager
 
-## Available Scripts
+![alt text](https://avatars0.githubusercontent.com/u/42389304?s=100&v=4 'Aionic Logo')
 
-In the project directory, you can run:
+Aionic offers open source applications for project management and collaboration. Our focus is on simplifying and accelerating the workflow for agile teams in the open source way.
 
-### `npm start`
+## Description
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Aionic offers a set of **open source products** for project management of any size. All our products are released under the [MIT](https://opensource.org/licenses/MIT) license, so feel free to customize it and share it with others!
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Please keep in mind that we just develop the software and don't host the applications anywhere for public usage. That means you have to take care of the hosting for yourself.
 
-### `npm test`
+All products are built on top of the **Aionic Core** application, since this is the place where all your data is managed and distributed. So for the usage of any other application, you have to use at least [Aionic Core](https://github.com/Aionic-Apps/aionic-core/).
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Moreover we highly recommend [Aionic Manager](https://github.com/Aionic-Apps/aionic-manager/) which makes your data management much easier.
 
-### `npm run build`
+Some of the technologies we trust: _Node.js, React, MySQL_
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+**Aionic Manager** is a web application that helps you to manage your data like users e.g. for Aionic Apps. The application is a SPA based on ReactJS written in JavaScript.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Some of the features included in this app:
 
-### `npm run eject`
+- User Management
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Prerequisites
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Node.js
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Installation
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+First of all, rename the following files and enter your credentials / infos:
 
-## Learn More
+- .env.example -> .env
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Afterward, run the following commands to start the application
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+yarn install
+yarn start
+```
 
-### Code Splitting
+NOTE: You can also use [npm](https://www.npmjs.com/).
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## User Guide
 
-### Analyzing the Bundle Size
+In progress.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Philosophy
 
-### Making a Progressive Web App
+> Our focus is on simplifying and accelerating the workflow for agile teams in the open source way.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+We try to help other people and companies realizing their ideas by offering highly maintainable project management softwares that everybody can **adjust as desired**.
 
-### Advanced Configuration
+## Community
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+- [Author](https://github.com/larswaechter)
+- [Website](https://aionic-apps.com)
+- [GitHub](https://github.com/Aionic-Apps)
+- [Twitter](https://twitter.com/AionicApps)
 
-### Deployment
+## License
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Aionic Manager is released under [MIT](https://github.com/Aionic-Apps/aionic-manager/blob/master/LICENSE) license.
