@@ -1,0 +1,18 @@
+@import 'aionic-library/scss/index.scss';
+
+body {
+	overflow-x: hidden;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#page-content-wrapper {
+	padding-bottom: 15px;
+
+	> .container-fluid {
+		padding: 20px 20px 0px;
+
+		.page-content {
+			padding: 10px 25px 0px;
+		}
+	}
+}

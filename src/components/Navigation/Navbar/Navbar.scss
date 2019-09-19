@@ -1,0 +1,13 @@
+@import 'aionic-library/scss/components/variables.scss';
+
+.navbar {
+	background-color: $bg-grey;
+	border-bottom: 1px solid #dfe6e9;
+
+	.navbar-nav {
+		a.nav-link,
+		button.nav-link {
+			padding: 10px 15px;
+		}
+	}
+}
