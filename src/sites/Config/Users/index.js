@@ -2,8 +2,12 @@ import React from 'react';
 
 import { Breadcrumbs, Spinner, Error, useFetcher } from 'aionic-library';
 
-import UserTable from 'components/User/Table';
 import Title from 'components/UI/Title';
+
+import UserCreate from 'components/User/Create';
+import UserTable from 'components/User/Table';
+import UserInvitation from 'components/User/Invitation';
+
 import UsersWidgetbar from './components/Widgetbar';
 
 const SitesConfigUsers = () => {
@@ -29,9 +33,15 @@ const SitesConfigUsers = () => {
 			<div className="page-content">
 				<Title title="Users" icon="fas fa-users" />
 				<UsersWidgetbar users={users} />
-
 				<div className="row">
-					<div className="col-12">
+					<div className="col-4">
+						<p className="mb-4">
+							Manage your Aionic users. Invite new users via e-mail or create new accounts directly.
+						</p>
+						<UserInvitation />
+						<UserCreate />
+					</div>
+					<div className="col-8">
 						<UserTable users={users} />
 					</div>
 				</div>

@@ -2,24 +2,27 @@ import React from 'react';
 
 import { Tabs, useTab } from 'aionic-library';
 
+import CacheMetadata from 'components/Cache/Metadata';
+import LogOverview from 'components/Log/Overview';
+
 const SitesConfigAionicCoreTabs = () => {
 	const [tab, changeTab] = useTab('General');
 
-	const tabs = [{ name: 'General' }, { name: 'Caches' }, { name: 'Logs' }, { name: 'Support' }];
+	const tabs = [{ name: 'General' }, { name: 'Cache' }, { name: 'Logs' }, { name: 'Support' }];
 
 	let content = null;
 	switch (tab) {
 		case 'General':
 			content = <p>General</p>;
 			break;
-		case 'Caches':
-			content = <p>Caches</p>;
+		case 'Cache':
+			content = <CacheMetadata />;
+			break;
+		case 'Logs':
+			content = <LogOverview />;
 			break;
 		case 'Support':
 			content = <p>Support</p>;
-			break;
-		case 'Help':
-			content = <p>Help</p>;
 			break;
 		default:
 			break;

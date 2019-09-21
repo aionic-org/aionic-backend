@@ -36,6 +36,7 @@ const SitesConfigGitHub = (props) => {
 						org={organization}
 						handleDelete={removeOrganization}
 						handleSync={updateOrganization}
+						key={organization.id}
 					/>
 				))}
 			</div>
@@ -50,7 +51,7 @@ const SitesConfigGitHub = (props) => {
 					<div className="col-12">
 						<Title title="GitHub" icon="fab fa-github" />
 						<div className="row">
-							<div className="col-5">
+							<div className="col-4">
 								<p className="mb-4">
 									Here you can manage your GitHub organizations. Other Aionic applications like
 									Aionic-Milestone for example can access an organization&apos;s repositories and
@@ -58,7 +59,7 @@ const SitesConfigGitHub = (props) => {
 								</p>
 								<GitOrganizationForm updateParent={addOrganization} />
 							</div>
-							<div className="col-7">{fetchedContent}</div>
+							<div className="col-8">{fetchedContent}</div>
 						</div>
 					</div>
 				</div>
