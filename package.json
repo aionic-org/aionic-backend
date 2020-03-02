@@ -1,12 +1,12 @@
 {
-  "name": "aionic-manager",
+  "name": "aionic-backend",
   "version": "0.0.1",
-  "description": "Aionic Manager - Application for Aionic data management",
+  "description": "Backend for managing the data across all Aionic applications",
   "author": "Lars Wächter <lars97.waechter@gmail.com>",
   "private": true,
-  "repository": "https://github.com/Aionic-Apps/aionic-manager",
+  "repository": "https://github.com/aionic-org/aionic-backend",
   "license": "MIT",
-  "homepage": "https://aionic-apps.com",
+  "homepage": "https://aionic.org",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -16,25 +16,25 @@
     "prettier": "prettier --config ./.prettierrc --write src/**/*.js"
   },
   "dependencies": {
-    "aionic-library": "https://github.com/Aionic-Apps/aionic-library#develop",
-    "dotenv": "^6.2.0",
-    "node-sass": "^4.12.0",
-    "query-string": "^6.8.3",
+    "aionic-library": "https://github.com/aionic-org/aionic-library#master",
+    "dotenv": "^8.2.0",
+    "node-sass": "^4.13.1",
+    "query-string": "^6.10.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-json-view": "^1.19.1",
     "react-modal": "^3.11.1",
-    "react-router-dom": "^5.0.1",
-    "react-scripts": "^3.2.0"
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.3.1"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.5.5",
-    "eslint-config-airbnb": "^17.1.1",
-    "eslint-config-prettier": "^6.0.0",
-    "eslint-plugin-import": "^2.18.0",
+    "@babel/runtime": "^7.8.4",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.2",
-    "prettier": "^1.18.2"
+    "eslint-plugin-react": "^7.18.3",
+    "prettier": "^1.19.1"
   },
   "eslintConfig": {
     "extends": "react-app"
