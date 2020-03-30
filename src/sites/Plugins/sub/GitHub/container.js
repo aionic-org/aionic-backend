@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 import { Api } from 'aionic-library';
 
-import SitesConfigGitHub from './index';
+import SitesPluginsGitHub from './index';
 
-class SitesConfigGitHubContainer extends Component {
+class SitesPluginsGitHubContainer extends Component {
 	constructor(props) {
 		super(props);
 
@@ -64,8 +64,8 @@ class SitesConfigGitHubContainer extends Component {
 
 	render() {
 		return (
-			<div className="SitesConfigGitHubContainer">
-				<SitesConfigGitHub
+			<div className="SitesPluginsGitHubContainer">
+				<SitesPluginsGitHub
 					{...this.state}
 					addOrganization={this.addOrganization}
 					removeOrganization={this.removeOrganization}
@@ -76,4 +76,4 @@ class SitesConfigGitHubContainer extends Component {
 	}
 }
 
-export default SitesConfigGitHubContainer;
+export default SitesPluginsGitHubContainer;

@@ -16,16 +16,16 @@ const SitesSignin = () => {
 	return (
 		<div className="SitesSignin">
 			<UILogo assignedStyle={logoStyle} />
-			<h1 className="h3 mb-0">Manager</h1>
+			<h1 className="h3 mb-0">Backend</h1>
 			<p className="text-muted">Please sign in</p>
 			<SigninForm />
 			<a
-				href="https://aionic-apps.com"
+				href="https://aionic.org"
 				target="_blank"
 				rel="noopener noreferrer"
 				className="mt-4 text-muted d-block"
 			>
-				Aionic Apps
+				Aionic
 			</a>
 		</div>
 	);

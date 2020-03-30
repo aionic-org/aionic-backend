@@ -67,7 +67,7 @@ const UserTable = (props) => {
 								<td>{Helper.formatDate(user.created)}</td>
 								<td>
 									<Link
-										to={`/config/users/${user.id}`}
+										to={`/users/${user.id}`}
 										className="fas fa-fw fa-external-link-square-alt"
 									/>
 								</td>

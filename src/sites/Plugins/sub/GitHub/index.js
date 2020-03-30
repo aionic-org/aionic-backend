@@ -5,9 +5,7 @@ import { Error, Spinner, Breadcrumbs } from 'aionic-library';
 import GitOrganizationForm from 'components/Git/Organization/Form';
 import GitOrganizationPreview from 'components/Git/Organization/Preview';
 
-import Title from 'components/UI/Title';
-
-const SitesConfigGitHub = (props) => {
+const SitesPluginsGitHub = (props) => {
 	const {
 		isLoading,
 		msg,
@@ -17,11 +15,7 @@ const SitesConfigGitHub = (props) => {
 		updateOrganization
 	} = props;
 
-	const breadcrumbs = [
-		{ title: 'Home', link: '/' },
-		{ title: 'Config', link: '/config' },
-		{ title: 'GitHub' }
-	];
+	const breadcrumbs = [{ title: 'Plugins', link: '/plugins' }, { title: 'GitHub' }];
 
 	let fetchedContent = null;
 	if (isLoading) {
@@ -44,22 +38,16 @@ const SitesConfigGitHub = (props) => {
 	}
 
 	return (
-		<div className="SitesConfigGitHub">
+		<div className="SitesPluginsGitHub">
 			<Breadcrumbs breadcrumbs={breadcrumbs} />
 			<div className="page-content">
 				<div className="row">
 					<div className="col-12">
-						<Title title="GitHub" icon="fab fa-github" />
 						<div className="row">
+							<div className="col-8">{fetchedContent}</div>
 							<div className="col-4">
-								<p className="mb-4">
-									Here you can manage your GitHub organizations. Other Aionic applications like
-									Aionic-Milestone for example can access an organization&apos;s repositories and
-									branches.
-								</p>
 								<GitOrganizationForm updateParent={addOrganization} />
 							</div>
-							<div className="col-8">{fetchedContent}</div>
 						</div>
 					</div>
 				</div>
@@ -68,4 +56,4 @@ const SitesConfigGitHub = (props) => {
 	);
 };
 
-export default SitesConfigGitHub;
+export default SitesPluginsGitHub;

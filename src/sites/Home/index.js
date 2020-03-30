@@ -1,8 +1,6 @@
 import React from 'react';
 
-import { Breadcrumbs, Session } from 'aionic-library';
-
-import Title from 'components/UI/Title';
+import { Breadcrumbs } from 'aionic-library';
 
 const SitesHome = () => {
 	const breadcrumbs = [{ title: 'Home' }];
@@ -10,9 +8,6 @@ const SitesHome = () => {
 	return (
 		<div className="SitesHome">
 			<Breadcrumbs breadcrumbs={breadcrumbs} />
-			<div className="page-content">
-				<Title title={`Welcome back, ${Session.getUser().firstname}!`} />
-			</div>
 		</div>
 	);
 };

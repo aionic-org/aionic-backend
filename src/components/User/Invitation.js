@@ -41,7 +41,6 @@ class UserInvitation extends Component {
 		return (
 			<div className="UserInvitation">
 				<form onSubmit={this.handleSubmit}>
-					<label>Invite new user</label>
 					<div className="input-group mb-3">
 						<input
 							type="email"
@@ -52,7 +51,7 @@ class UserInvitation extends Component {
 							autoComplete="off"
 						/>
 						<div className="input-group-append">
-							<button type="button" className="btn button button-secondary">
+							<button type="button" className="btn btn-primary">
 								Invite
 							</button>
 						</div>

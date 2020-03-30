@@ -23,4 +23,6 @@ Thumbs.db
 
 # dotenv environment variables file
 .env
-.env.test
+
+# Ideas
+.idea/

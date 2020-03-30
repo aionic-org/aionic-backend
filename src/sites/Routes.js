@@ -10,14 +10,13 @@ import SitesRegister from './Register';
 
 import SitesHome from './Home';
 
-import SitesConfig from './Config';
+import SitesApplications from './Applications';
+import SitesApplicationsCore from './Applications/sub/aionic-core';
 
-import SitesConfigAionicCore from './Config/Aionic-Core';
+import SitesUsers from './Users';
+import SitesUserContainer from './Users/User/container';
 
-import SitesConfigUsers from './Config/Users';
-import SitesConfigUserContainer from './Config/Users/User/container';
-
-import SitesConfigGitHubContainer from './Config/GitHub/container';
+import SitesPluginsGitHubContainer from './Plugins/sub/GitHub/container';
 
 const Routes = () => {
 	const AuthContainer = () => (
@@ -30,18 +29,19 @@ const Routes = () => {
 	const DefaultContainer = () => (
 		<div id="page-content-wrapper">
 			<Navbar />
-			<div className="container-fluid">
+			<div className="container">
 				<Switch>
 					<Route exact path="/" component={SitesHome} />
 
-					<Route exact path="/config" component={SitesConfig} />
+					<Route exact path="/applications" component={SitesApplications} />
+					<Route exact path="/applications/aionic-backend" component={null} />
+					<Route exact path="/applications/aionic-core" component={SitesApplicationsCore} />
+					<Route exact path="/applications/aionic-milestone" component={null} />
 
-					<Route exact path="/config/aionic-core" component={SitesConfigAionicCore} />
+					<Route exact path="/users" component={SitesUsers} />
+					<Route exact path="/users/:id" component={SitesUserContainer} />
 
-					<Route exact path="/config/users" component={SitesConfigUsers} />
-					<Route exact path="/config/users/:id" component={SitesConfigUserContainer} />
-
-					<Route exact path="/config/github" component={SitesConfigGitHubContainer} />
+					<Route exact path="/plugins/github" component={SitesPluginsGitHubContainer} />
 
 					<Route
 						path="/signout"
